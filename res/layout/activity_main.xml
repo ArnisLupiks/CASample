@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/cyan"
+    tools:context="com.example.casample.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/black"
+        android:height="50dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="@string/Converter_app"
+        android:textColor="@color/purple"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:width="220dp" />
+
+    <Button
+        android:id="@+id/btnKgToPounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="31dp"
+        android:text="@string/KgToPnd"
+        android:onClick="clickKgToPnd"
+        
+        android:width="280dp" />
+
+    <Button
+        android:id="@+id/btnKmToMl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnKgToPounds"
+        android:layout_marginTop="24dp"
+        android:text="@string/KmToMl"
+        
+        android:onClick="clickKgToPnd"
+        android:width="280dp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="@string/enterNum"
+        android:inputType="numberSigned"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:width="280dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnKmToMl"
+        android:layout_marginTop="28dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:height="100dp"
+        android:hint="@string/TheResults"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/purple"
+        android:textColorHint="@color/purple"
+        android:width="280dp" />
+
+</RelativeLayout>
